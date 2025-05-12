@@ -41,7 +41,7 @@
     no-data
   steps:
     - Ввести никнейм
-    - Ввести в поле e-mail: invalid-email (или test@domain, test.com)
+    - Ввести в Email данные invalid-email (или test@domain, test.com)
     - Ввести пароль
     - Подтвердить пароль
     - Нажать кнопку "Зарегистрироваться" (Submit)
