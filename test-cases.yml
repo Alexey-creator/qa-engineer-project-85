@@ -41,7 +41,7 @@
     no-data
   steps:
     - Ввести никнейм
-    - Ввести в Email данные invalid-email (или test@domain, test.com)
+    - "Ввести в поле e-mail":"invalid-email (или test@domain, test.com)"
     - Ввести пароль
     - Подтвердить пароль
     - Нажать кнопку "Зарегистрироваться" (Submit)
@@ -77,7 +77,7 @@
   steps:
     - Нажать кнопку регистрации в правом верхнем углу (Sign up)
     - Ввести никнейм
-    - Ввести e-mail: existinguser@example.com
+    - "Ввести e-mail":"existinguser@example.com"
     - Ввести пароль
     - Подтвердить пароль
     - Нажать кнопку "Зарегистрироваться" (Submit)
@@ -94,7 +94,7 @@
     no-data
   steps:
     - Нажать кнопку регистрации в правом верхнем углу (Sign up)
-    - Ввести Никнейм: ExistingNickname
+    - "Ввести Никнейм":"ExistingNickname"
     - Ввести e-mail
     - Ввести пароль
     - Подтвердить пароль
