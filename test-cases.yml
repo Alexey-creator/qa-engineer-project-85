@@ -6,10 +6,10 @@
   prerequisites: |
     no-data
   test-data: |
-    nickname: "TestUserHexlet01"
-    email: "testuserhexlet01@example.com"
-    password: "StrongP@sswOrd123!"
-    confirm_password: "StrongP@sswOrd123!"
+    nickname 'TestUserHexlet01'
+    email 'testuserhexlet01@example.com'
+    password 'StrongP@sswOrd123!'
+    confirm_password 'StrongP@sswOrd123!'
   steps:
     - Нажать кнопку 'Зарегистрироваться' (Sign up)
     - Ввести никнейм
@@ -27,10 +27,10 @@
   prerequisites: |
     no-data
   test-data: |
-    Поле "Nickname": пустое ("")
-    Поле "Email": пустое ("")
-    Поле "Password": пустое ("")
-    Поле "Password Confirmation": пустое ("")
+    Поле 'Nickname' пустое ('')
+    Поле 'Email' пустое ('')
+    Поле 'Password' пустое ('')
+    Поле 'Password Confirmation' пустое ('')
   steps:
     - Оставить поля 'Nickname', 'Email', 'Password', 'Password Confirmation' пустыми.
     - Нажать кнопку 'Зарегистрироваться' (Submit)
@@ -44,10 +44,10 @@
   prerequisites: |
     no-data
   test-data: |
-    nickname: "TestUserInvalidEmail"
-    email: "invalid-email-format" # или "test@domain", "test.com"
-    password: "StrongP@sswOrd123!"
-    confirm_password: "StrongP@sswOrd123!"
+    nickname 'TestUserInvalidEmail'
+    email 'invalid-email-format' или 'test@domain', 'test.com'
+    password 'StrongP@sswOrd123!'
+    confirm_password 'StrongP@sswOrd123!'
   steps:
     - Ввести никнейм
     - Ввести в Email данные 'invalid-email (или test@domain, test.com)'
@@ -64,10 +64,10 @@
   prerequisites: |
     no-data
   test-data: |
-    nickname: "TestUserMismatchPass"
-    email: "mismatchpass@example.com"
-    password: "StrongP@sswOrd123!"
-    confirm_password: "DifferentP@sswOrd456!"
+    nickname 'TestUserMismatchPass'
+    email 'mismatchpass@example.com'
+    password 'StrongP@sswOrd123!'
+    confirm_password 'DifferentP@sswOrd456!'
   steps:
     - Нажать кнопку регистрации в правом верхнем углу (Sign up)
     - Ввести никнейм
@@ -85,10 +85,10 @@
   prerequisites: |
     Существует аккаунт с Email 'existinguser@example.com'
   test-data: |
-    nickname: "NewUserExistingEmail"
-    email: "existinguser@example.com"
-    password: "StrongP@sswOrd123!"
-    confirm_password: "StrongP@sswOrd123!"
+    nickname 'NewUserExistingEmail'
+    email 'existinguser@example.com'
+    password 'StrongP@sswOrd123!'
+    confirm_password 'StrongP@sswOrd123!'
   steps:
     - Нажать кнопку регистрации в правом верхнем углу (Sign up)
     - Ввести никнейм
@@ -106,10 +106,10 @@
   prerequisites: |
     Существует аккаунт с Никнеймом 'ExistingNickname'
   test-data: |
-    nickname: "ExistingNickname"
-    email: "newemailfornickname@example.com"
-    password: "StrongP@sswOrd123!"
-    confirm_password: "StrongP@sswOrd123!"
+    nickname 'ExistingNickname'
+    email 'newemailfornickname@example.com'
+    password 'StrongP@sswOrd123!'
+    confirm_password 'StrongP@sswOrd123!'
   steps:
     - Нажать кнопку регистрации в правом верхнем углу (Sign up)
     - Ввести Никнейм 'ExistingNickname'
@@ -126,7 +126,7 @@
     Система должна позволять новому пользователю создать учетную запись или авторизоваться, используя существующий аккаунт Github, после предоставления необходимых разрешений приложению
   prerequisites: |
     У пользователя есть активный и валидный аккаунт Github
-    Сценарий, когда пользователь "впервые" регистрируется/авторизуется на платформе через данный Github-аккаунт
+    Сценарий, когда пользователь 'впервые' регистрируется/авторизуется на платформе через данный Github-аккаунт
   test-data: |
     Данные валидного тестового аккаунта Github
   steps:
@@ -142,7 +142,7 @@
     Пользователь должен иметь возможность зарегистрироваться/войти в систему, используя свой аккаунт Discord
   prerequisites: |
     У пользователя есть активный и валидный аккаунт Discord
-    Сценарий, когда пользователь "впервые" регистрируется/авторизуется на платформе через данный Discord-аккаунт
+    Сценарий, когда пользователь 'впервые' регистрируется/авторизуется на платформе через данный Discord-аккаунт
   test-data: |
     Данные валидного тестового аккаунта Discord
   steps:
@@ -172,8 +172,8 @@
   prerequisites: |
     no-data
   test-data: |
-    login_or_email: "ExistingUserLogin"
-    password: "ExistingUserP@sswOrd"
+    login_or_email 'ExistingUserLogin'
+    password 'ExistingUserP@sswOrd'
   steps:
     - Нажать кнопку авторизации в правом верхнем углу (Sign in)
     - Ввести логин
@@ -189,8 +189,8 @@
   prerequisites: |
     no-data
   test-data: |
-    login_or_email: "NonExistentUser"
-    password: "WrongPassword123"
+    login_or_email 'NonExistentUser'
+    password 'WrongPassword123'
   steps:
     - Нажать кнопку авторизации в правом верхнем углу (Sign in)
     - Ввести неверный логин
@@ -207,17 +207,17 @@
     Пользователь зарегистрирован и успешно аутентифицирован в системе
   test-data: |
     level_stars: 2
-    game_type_opponent: "bot"
+    game_type_opponent: 'bot'
     time_control_minutes: 5
-    task_selection_mode: "random"
-    task_name_or_tag: ""
+    task_selection_mode: 'random'
+    task_name_or_tag: ''
   steps:
     - Нажать кнопку 'Create a game' (или 'Создать игру')
-    - В модальном окне "Create a game":
+    - В модальном окне 'Create a game'
         - Выбрать уровень сложности
-        - В секции "Game Type" нажать кнопку 'With a bot'
-        - В секции "Time control" установить время
-        - В секции "Choose task by name or tags" выбрать "random"
+        - В секции 'Game Type' нажать кнопку 'With a bot'
+        - В секции 'Time control' установить время
+        - В секции 'Choose task by name or tags' выбрать 'random'
         - Нажать кнопку 'Create battle' (или 'Создать битву')
   expected-result: |
     Создана новая игра с выбранными параметрами, приглашён соперник
@@ -262,9 +262,9 @@
   prerequisites: |
     no-data
   test-data: |
-    level: "Hard"
-    task_type: "Математика"
-    opponent_type: "bot"
+    level: 'Hard'
+    task_type: 'Математика'
+    opponent_type: 'bot'
   steps:
     - Нажать 'Создать игру'
     - Выбрать уровень 'Hard'
